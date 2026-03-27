@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 - Ho Chi Minh City | Family Trip</title>
+    <style>
+        :root {
+            --warm-bg: #fdfaf5;
+            --soft-orange: #e9a17a;
+            --sage-green: #9fb3a2;
+            --text-brown: #5d4a44;
+            --card-white: #ffffff;
+            --line-color: #dcd0c0;
+        }
+
+        body {
+            background-color: var(--warm-bg);
+            color: var(--text-brown);
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-header {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            background: var(--card-white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .back-btn {
+            text-decoration: none;
+            color: var(--soft-orange);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+
+        .hero {
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 0.9rem;
+            color: #8a7a74;
+            margin-top: 5px;
+        }
+
+        .timeline {
+            padding: 0 25px 40px 25px;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 35px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--line-color);
+        }
+
+        .event {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 30px;
+        }
+
+        .event-dot {
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: var(--soft-orange);
+            border-radius: 50%;
+            border: 4px solid var(--warm-bg);
+            z-index: 1;
+        }
+
+        .time {
+            font-weight: bold;
+            color: var(--soft-orange);
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .details {
+            background: var(--card-white);
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+        }
+
+        .details h3 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .details p {
+            margin: 8px 0 0 0;
+            font-size: 0.9rem;
+            color: #7a6a64;
+            line-height: 1.5;
+        }
+
+        .address-box {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed var(--line-color);
+        }
+
+        .map-link {
+            display: inline-block;
+            color: var(--soft-orange);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            border: 1px solid var(--soft-orange);
+            padding: 4px 10px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .map-link:active {
+            background-color: var(--soft-orange);
+            color: white;
+        }
+
+        .event-representative-photo {
+            margin-top: 10px;
+            padding: 0 15px;
+            transition: transform 0.2s;
+        }
+
+        .event-representative-photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            display: block;
+        }
+
+        .event-representative-photo:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav-header">
+        <a href="index.html" class="back-btn">←</a>
+        <span>Day 02 - 法式優雅與粉紅浪漫</span>
+    </div>
+
+    <div class="hero">
+        <h1>胡志明市：經典地標巡禮</h1>
+        <p>2026.05.01 (五)</p>
+    </div>
+
+    <div class="timeline">
+        <div class="event">
+            <div class="event-dot"></div>
+            <span class="time">12:00</span>
+            <div class="details">
+                <h3>🥢 午餐 Ngon Restaurant</h3>
+                <p>走進如美食市集般的法式洋樓，在充滿南洋風情的庭園中，一次蒐羅最道地的越式百味。</p>
+                <div class="address-box">
+                    <p style="font-size: 0.85rem; color: #5d4a44; margin: 10px 0 5px 0; font-weight: bold;">
+                        📍 地址：160 Pasteur, Bến Nghé, Sài Gòn, Hồ Chí Minh 70000越南
+                    </p>
+                    <a href="https://maps.app.goo.gl/brNdyScmoASmgbgb7" target="_blank" class="map-link">
+                        在 Google 地圖中開啟 →
+                    </a>
+                </div>
+            </div>
+
+            <div class="event-representative-photo">
+                <img src="https://cdn.tasteatlas.com/images/restaurants/527d1e45fafa4e499e5c8d31f4f52312.jpg?w=600"
+                    alt="Ngon Restaurant">
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-dot"></div>
+            <span class="time">14:00</span>
+            <div class="details">
+                <h3>📮 西貢中心郵政局</h3>
+                <p>踏入充滿歷史底蘊的法式百年郵局，在宏偉的黃色拱門下，親手寄出一份來自西貢的思念。</p>
+                <div class="address-box">
+                    <p style="font-size: 0.85rem; color: #5d4a44; margin: 10px 0 5px 0; font-weight: bold;">
+                        📍 地址：02 Công trường Công xã Paris, Bến Nghé, Quận 1, Hồ Chí Minh 70000越南
+                    </p>
+                    <a href="https://maps.app.goo.gl/UnNVEuHsDN6ibtJV8" target="_blank" class="map-link">
+                        在 Google 地圖中開啟 →
+                    </a>
+                </div>
+            </div>
+
+            <div class="event-representative-photo">
+                <img src="https://www.bring-you.info/imgs/2024/01/Buu-Eien-Trung-Tam-Sai-Gon-2.jpg" alt="post office">
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-dot"></div>
+            <span class="time">15:00</span>
+            <div class="details">
+                <h3>📚 胡志明市書街</h3>
+                <p>漫步在綠蔭遮蔽的藝文長廊，遠離城市喧囂，在墨香與咖啡香交織的街道享受片刻寧靜。</p>
+                <div class="address-box">
+                    <p style="font-size: 0.85rem; color: #5d4a44; margin: 10px 0 5px 0; font-weight: bold;">
+                        📍 地址：2 Đ. Nguyễn Văn Bình, Bến Nghé, Sài Gòn, Hồ Chí Minh 700000越南
+                    </p>
+                    <a href="https://maps.app.goo.gl/xawMEMQkqRY6aEP29" target="_blank" class="map-link">
+                        在 Google 地圖中開啟 →
+                    </a>
+                </div>
+            </div>
+
+            <div class="event-representative-photo">
+                <img src="https://omega.taipei/wp-content/uploads/2017/08/0802.jpg" alt="BookStreet">
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-dot"></div>
+            <span class="time">16:30</span>
+            <div class="details">
+                <h3>⛪ 新定教堂 (粉紅教堂)</h3>
+                <p>探訪最具浪漫氣息的「粉紅教堂」，在唯美的尖塔下捕捉最吸睛的色彩，留下最難忘的旅遊紀錄。</p>
+                <div class="address-box">
+                    <p style="font-size: 0.85rem; color: #5d4a44; margin: 10px 0 5px 0; font-weight: bold;">
+                        📍 地址：289 Hai Bà Trưng, Quận 3, Hồ Chí Minh 700000越南
+                    </p>
+                    <a href="https://maps.app.goo.gl/M13nAaLTCSDB86DF9" target="_blank" class="map-link">
+                        在 Google 地圖中開啟 →
+                    </a>
+                </div>
+            </div>
+
+            <div class="event-representative-photo">
+                <img src="https://networkwatcherrgvnetdiag.blob.core.windows.net/gds-blob/production/products/b1e60f36-82fe-48bc-98dd-8eb8ac008079/0.jpg"
+                    alt="Pink Church">
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-dot"></div>
+            <span class="time">17:30</span>
+            <div class="details">
+                <h3>☕ Cộng Coffee</h3>
+                <p>坐在教堂對面的復古閣樓裡，來一杯招牌椰子咖啡，以絕佳視野欣賞粉紅教堂的莊嚴與美麗。</p>
+                <div class="address-box">
+                    <p style="font-size: 0.85rem; color: #5d4a44; margin: 10px 0 5px 0; font-weight: bold;">
+                        📍 地址：274 Hai Bà Trưng, Tân Định, Quận 1, Hồ Chí Minh, 越南
+                    </p>
+                    <a href="https://maps.app.goo.gl/KnA31hDcV4SCCDmeA" target="_blank" class="map-link">
+                        在 Google 地圖中開啟 →
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-dot"></div>
+            <span class="time">19:30</span>
+            <div class="details">
+                <h3>🍱 晚餐 MANMARU OSAKA RESTAURANT 1</h3>
+                <p>在熱鬧的居酒屋氛圍中，品嚐道地且高品質的日式料理，感受西貢多元並蓄的飲食魅力。</p>
+                <div class="address-box">
+                    <p style="font-size: 0.85rem; color: #5d4a44; margin: 10px 0 5px 0; font-weight: bold;">
+                        📍 地址：71 Mạc Đĩnh Chi Quận 1, Dakao Ward, 70000, Thành phố Hồ Chí Minh, 700000越南
+                    </p>
+                    <a href="https://maps.app.goo.gl/sLAmw44B7cfapH2y9" target="_blank" class="map-link">
+                        在 Google 地圖中開啟 →
+                    </a>
+                </div>
+            </div>
+
+            <div class="event-representative-photo">
+                <img src="https://d2kihw5e8drjh5.cloudfront.net/eyJidWNrZXQiOiJ1dGEtaW1hZ2VzIiwia2V5IjoicGxhY2VfaW1nL05yUXVra1BZUW1tTW5FaTltMTlKc1EiLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjY0MCwiaGVpZ2h0Ijo2NDAsImZpdCI6Imluc2lkZSJ9LCJyb3RhdGUiOm51bGwsInRvRm9ybWF0IjogIndlYnAifX0="
+                    alt="MANMARU OSAKA RESTAURANT">
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-dot"></div>
+            <span class="time">21:00</span>
+            <div class="details">
+                <h3>🏨 返回飯店</h3>
+                <p>結束優雅的漫步時光，回到舒適的飯店沈澱心情，準備迎接明日的文青之旅。</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
