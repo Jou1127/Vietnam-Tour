@@ -213,6 +213,195 @@
     <div class="footer-info">
         <div class="info-item">
             <span>匯率參考</span>
+            1 TWD ≈ 833 VND
+        </div>
+        <div class="info-item">
+            <span>當地天氣</span>
+            胡志明 26°C-37°C 🌤️
+        </div>
+    </div>
+
+</body>
+
+</html>
+        header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            letter-spacing: 2px;
+            color: var(--text-brown);
+        }
+
+        header .date {
+            font-size: 0.9rem;
+            color: #a08d86;
+            margin-top: 5px;
+        }
+
+        /* 行程卡片容器 */
+        .itinerary-list {
+            width: 90%;
+            max-width: 500px;
+            padding-bottom: 100px;
+            /* 為底部欄留空間 */
+        }
+
+        /* 單個 Day 卡片 */
+        .day-card {
+            background: var(--card-white);
+            border-radius: 20px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(93, 74, 68, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .day-card:active {
+            transform: scale(0.98);
+        }
+
+        /* 卡片上方的照片區 (拍立得感) */
+        .card-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .day-tag {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            color: var(--soft-orange);
+        }
+
+        /* 卡片文字區 */
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-info h2 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        .card-info p {
+            font-size: 0.9rem;
+            color: #8a7a74;
+            margin: 8px 0 15px 0;
+        }
+
+        .btn-view {
+            background-color: var(--soft-orange);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* 底部資訊欄 (固定) */
+        .footer-info {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+        }
+
+        .info-item span {
+            display: block;
+            color: var(--sage-green);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>VIETNAM <span>FAMILY</span></h1>
+        <div class="date">2026.04.30 - 05.04</div>
+    </header>
+
+    <div class="itinerary-list">
+        <div class="day-card">
+            <div class="card-image"
+                style="background-image: url('https://www.taoyuan-airport.com/api/imagecrop/coverImage/F906A942-E7B9-F011-BC1A-0050569094FE');">
+                <div class="day-tag">Day 01</div>
+            </div>
+            <div class="card-info">
+                <h2>西貢初見與市井煙火</h2>
+                <p>啟程胡志明，漫步經典的第一郡，從道地的越式捲餅與法國麵包開始，感受西貢街頭最原始的活力。</p>
+                <button class="btn-view" onclick="window.location.href='day1.html'">查看行程內容</button>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="card-image"
+                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Oficina_Central_de_Correos%2C_Ciudad_Ho_Chi_Minh%2C_Vietnam%2C_2013-08-14%2C_DD_07.JPG/330px-Oficina_Central_de_Correos%2C_Ciudad_Ho_Chi_Minh%2C_Vietnam%2C_2013-08-14%2C_DD_07.JPG');">
+                <div class="day-tag">Day 02</div>
+            </div>
+            <div class="card-info">
+                <h2>法式優雅與粉紅浪漫</h2>
+                <p>穿梭於法式建築與藝文書街，在著名的粉紅教堂前，享受一段充滿異國風情的午茶時光。</p>
+                <button class="btn-view" onclick="window.location.href='day2.html'">查看行程內容</button>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="card-image"
+                style="background-image: url('https://holiday.gowentgone.net/wp-content/uploads/2018/11/cf6.jpg');">
+                <div class="day-tag">Day 03</div>
+            </div>
+            <div class="card-info">
+                <h2>文青公寓與城市霓虹</h2>
+                <p>探索老建築裡的咖啡靈魂，搭乘觀光巴士穿梭在光影交錯的夜色中，俯瞰城市的轉變。</p>
+                <button class="btn-view" onclick="window.location.href='day3.html'">查看行程內容</button>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="card-image"
+                style="background-image: url('https://stylerepublik.vn/media/full/2025/12/5m1a2913-jpg.jpg');">
+                <div class="day-tag">Day 04</div>
+            </div>
+            <div class="card-info">
+                <h2>穿巷尋寶與洗滌疲憊</h2>
+                <p>在文青小店尋找質感選物，以越式洗頭與夜生活放鬆身心。</p>
+                <button class="btn-view" onclick="window.location.href='day4.html'">查看行程內容</button>
+            </div>
+        </div>
+
+        <div class="day-card">
+            <div class="card-image"
+                style="background-image: url('https://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com/shutterstock41634346016409517468451679391781530-1711504771776.png');">
+                <div class="day-tag">Day 05</div>
+            </div>
+            <div class="card-info">
+                <h2>歸途與美好回憶</h2>
+                <p>帶著滿滿的咖啡香與戰利品前往機場，將這座城市的熱情與獨特色彩收進旅行回憶中。</p>
+                <button class="btn-view" onclick="window.location.href='day5.html'">查看行程內容</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-info">
+        <div class="info-item">
+            <span>匯率參考</span>
             1 TWD ≈ 770 VND
         </div>
         <div class="info-item">
